@@ -7,13 +7,17 @@ class GeneratePalindromesService {
 
     execute({initialNumber, limitNumber }: Irequest) {
 
-        if(typeof(initialNumber) == 'string'){
-            throw new Error("Initial number must be a number!")
+        if(limitNumber < 0) {
+            throw new Error("Limit number must be positive!")
         };
 
-        if(typeof(limitNumber) == 'string') {
-            throw new Error("Limit number must be a number!")
-        }
+        if(initialNumber > limitNumber) {
+            throw new Error("Limit number must be greater than the initial number!")
+        };
+
+        if(initialNumber < 0){
+            throw new Error("Initial number must be positive!")
+        };
         
         const palindromes = [];
         
@@ -23,7 +27,7 @@ class GeneratePalindromesService {
             if( i === parseInt(convertString)) {
                 palindromes.push(i);
             };
-        }
+        };
           
         return palindromes;
     }

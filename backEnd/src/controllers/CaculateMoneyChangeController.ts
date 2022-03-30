@@ -1,17 +1,17 @@
 import { Request, Response } from 'express';
-import { CalculeMoneyChangeService } from '../services/CalculeMoneyChangeService';
+import { CalculateMoneyChangeService } from '../services/CalculateMoneyChangeService';
 
-class CalculeMoneyChangeController {
+class CalculateMoneyChangeController {
 
     handle(request: Request, response: Response) {
-        const {totalValue, moneyPayd } = request.body;
+        const {totalValue, moneyPaid } = request.body;
 
-        const calculeMoneyChangeService = new CalculeMoneyChangeService();
+        const calculeMoneyChangeService = new CalculateMoneyChangeService();
 
-        const moneyChange = calculeMoneyChangeService.execute({totalValue, moneyPayd});
+        const moneyChange = calculeMoneyChangeService.execute({totalValue, moneyPaid});
 
         response.json(moneyChange);
     }
 }
 
-export { CalculeMoneyChangeController }
+export { CalculateMoneyChangeController }
