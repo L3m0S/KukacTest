@@ -10,7 +10,7 @@ app.use(router);
 
 app.use(handleErrors);
 
-const port = process.env.PORT || 3000;
+const port = 3333;
 
 app.listen(port, () => {
     logger.info(`Server is running on PORT: ${port}...`)

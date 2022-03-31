@@ -4,7 +4,7 @@ import { SaveUsersCarService } from '../services/SaveUsersCarService';
 class SaveUsersCarController {
 
     handle(request: Request, response: Response) {
-        const{type, model, yearOfFabrication, quantityOfDoors, brand} = request.body;
+        const{model, yearOfFabrication, quantityOfDoors, brand} = request.body;
 
         const saveUsersCarService =  new SaveUsersCarService();
 

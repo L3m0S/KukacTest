@@ -15,13 +15,13 @@ class SaveUsersCarService {
         
         const car = new Car({model, yearOfFabrication, quantityOfDoors, brand});
 
-        const database = fs.readFileSync("C:/Users/Lemos/Desktop/KukacTest/backEnd/src/database/database.json", 'utf-8');
+        const database = fs.readFileSync("C:/Users/gabriel.lemos/Desktop/Nova pasta/KukacTest-master/backEnd/src/database/database.json", 'utf-8');
 
         let data = JSON.parse(database)
 
         console.log(data.vehicles.push(car))
 
-        fs.writeFileSync("C:/Users/Lemos/Desktop/KukacTest/backEnd/src/database/database.json",JSON.stringify(data))
+        fs.writeFileSync("C:/Users/gabriel.lemos/Desktop/Nova pasta/KukacTest-master/backEnd/src/database/database.json",JSON.stringify(data, null, 2))
         
         return car;
     };

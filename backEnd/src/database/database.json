@@ -1,1 +1,37 @@
-{"vehicles":[{"model":"cobalt2","yearOfFabrication":2016,"quantityOfDoors":2,"brand":"voks"},{"model":"cobalt2","yearOfFabrication":2016,"quantityOfDoors":2,"brand":"voks"},{"model":"cobalt2","yearOfFabrication":2016,"quantityOfDoors":2,"brand":"voks"}]}
+{
+  "vehicles": [
+    {
+      "model": "gol",
+      "yearOfFabrication": 1990,
+      "quantityOfDoors": 2,
+      "brand": "volks"
+    },
+    {
+      "model": "gol",
+      "yearOfFabrication": 1990,
+      "quantityOfDoors": 2,
+      "brand": "volks"
+    },
+    {
+      "model": "gol",
+      "yearOfFabrication": 1990,
+      "quantityOfDoors": 2,
+      "brand": "volks"
+    },
+    {
+      "model": "gol",
+      "yearOfFabrication": 1990,
+      "quantityOfDoors": 2,
+      "brand": "volks"
+    },
+    {
+      "model": "gol",
+      "yearOfFabrication": 1990,
+      "quantityOfDoors": 2,
+      "brand": "volks"
+    },
+    {},
+    {},
+    {}
+  ]
+}
